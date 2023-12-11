@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BookControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BookControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.trincoll.book_library.controllers.html">edu.trincoll.book_library.controllers</a> &gt; BookControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.476s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createBook()</td>
+<td class="success">0.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">deleteBookById()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAllBooks()</td>
+<td class="success">0.417s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getBookById()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>23:52:05.484 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [edu.trincoll.book_library.controllers.BookControllerTest]: BookControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:52:05.539 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration edu.trincoll.book_library.BookLibraryApplication for test class edu.trincoll.book_library.controllers.BookControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-10T23:52:05.722-05:00  INFO 22050 --- [    Test worker] e.t.b.controllers.BookControllerTest     : Starting BookControllerTest using Java 17.0.8.1 with PID 22050 (started by anupamkhargharia in /Users/anupamkhargharia/Desktop/Computer Science/cpsc310/book_library)
+2023-12-10T23:52:05.723-05:00  INFO 22050 --- [    Test worker] e.t.b.controllers.BookControllerTest     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-12-10T23:52:05.731-05:00 DEBUG 22050 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@73ad4ecc
+2023-12-10T23:52:05.982-05:00  INFO 22050 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-10T23:52:06.003-05:00  INFO 22050 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2023-12-10T23:52:06.177-05:00  INFO 22050 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10T23:52:06.254-05:00  INFO 22050 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b7a20dcb-11a8-4e0e-9a11-d9df850e93ef user=SA
+2023-12-10T23:52:06.254-05:00  INFO 22050 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10T23:52:06.275-05:00  INFO 22050 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-10T23:52:06.297-05:00  INFO 22050 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-10T23:52:06.313-05:00  INFO 22050 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-10T23:52:06.405-05:00  INFO 22050 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-10T23:52:06.784-05:00  INFO 22050 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-10T23:52:06.791-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    drop table if exists book cascade 
+2023-12-10T23:52:06.795-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    create table book (
+        publication_date date,
+        id bigint generated by default as identity,
+        author varchar(255),
+        isbn varchar(255),
+        title varchar(255),
+        primary key (id)
+    )
+2023-12-10T23:52:06.800-05:00  INFO 22050 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-10T23:52:06.976-05:00  WARN 22050 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-10T23:52:07.016-05:00 DEBUG 22050 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2023-12-10T23:52:07.068-05:00 DEBUG 22050 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-12-10T23:52:07.083-05:00 DEBUG 22050 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-12-10T23:52:07.100-05:00 DEBUG 22050 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-12-10T23:52:07.143-05:00 DEBUG 22050 --- [    Test worker] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2023-12-10T23:52:07.143-05:00 DEBUG 22050 --- [    Test worker] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
+2023-12-10T23:52:07.146-05:00  INFO 22050 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-10T23:52:07.147-05:00  INFO 22050 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-10T23:52:07.148-05:00  INFO 22050 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-12-10T23:52:07.163-05:00  INFO 22050 --- [    Test worker] e.t.b.controllers.BookControllerTest     : Started BookControllerTest in 1.556 seconds (process running for 2.094)
+2023-12-10T23:52:07.195-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        book
+        (author, isbn, publication_date, title, id) 
+    values
+        (?, ?, ?, ?, default)
+2023-12-10T23:52:07.211-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        book
+        (author, isbn, publication_date, title, id) 
+    values
+        (?, ?, ?, ?, default)
+Book{id=1, title='The Wizard of Ooze', author='John Doe', isbn='0205080057', publicationDate=2022-07-02}
+Book{id=2, title='Fight. Club. - A Comprehensive Guide for Barbarians', author='Jane Baskett', isbn='9781234567897', publicationDate=2004-03-06}
+2023-12-10T23:52:07.546-05:00 DEBUG 22050 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to edu.trincoll.book_library.controllers.BookController#getAllBooks()
+2023-12-10T23:52:07.609-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.isbn,
+        b1_0.publication_date,
+        b1_0.title 
+    from
+        book b1_0
+2023-12-10T23:52:07.618-05:00 DEBUG 22050 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-12-10T23:52:07.619-05:00 DEBUG 22050 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Book{id=1, title='The Wizard of Ooze', author='John Doe', isbn='0205080057', publicationDate=2022-0 (truncated)...]
+2023-12-10T23:52:07.644-05:00 DEBUG 22050 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to edu.trincoll.book_library.controllers.BookController#getBookByID(Long)
+2023-12-10T23:52:07.652-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.isbn,
+        b1_0.publication_date,
+        b1_0.title 
+    from
+        book b1_0 
+    where
+        b1_0.id=?
+2023-12-10T23:52:07.655-05:00 DEBUG 22050 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-12-10T23:52:07.656-05:00 DEBUG 22050 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Book{id=1, title='The Wizard of Ooze', author='John Doe', isbn='0205080057', publicationDate=2022-07 (truncated)...]
+2023-12-10T23:52:07.659-05:00 DEBUG 22050 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to edu.trincoll.book_library.controllers.BookController#deleteBookByID(Long)
+2023-12-10T23:52:07.660-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        b1_0.id,
+        b1_0.author,
+        b1_0.isbn,
+        b1_0.publication_date,
+        b1_0.title 
+    from
+        book b1_0 
+    where
+        b1_0.id=?
+2023-12-10T23:52:07.665-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    delete 
+    from
+        book 
+    where
+        id=?
+2023-12-10T23:52:07.666-05:00 DEBUG 22050 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-12-10T23:52:07.667-05:00 DEBUG 22050 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2023-12-10T23:52:07.670-05:00 DEBUG 22050 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to edu.trincoll.book_library.controllers.BookController#createBook(Book)
+2023-12-10T23:52:07.686-05:00 DEBUG 22050 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Read &quot;application/json;charset=UTF-8&quot; to [Book{id=null, title='Test Book', author='Test Author', isbn='1234567890123', publicationDate=2023-01 (truncated)...]
+2023-12-10T23:52:07.687-05:00 DEBUG 22050 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        book
+        (author, isbn, publication_date, title, id) 
+    values
+        (?, ?, ?, ?, default)
+2023-12-10T23:52:07.689-05:00 DEBUG 22050 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-12-10T23:52:07.689-05:00 DEBUG 22050 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Book{id=3, title='Test Book', author='Test Author', isbn='1234567890123', publicationDate=2023-01-01 (truncated)...]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Dec 10, 2023, 11:52:07 PM</p>
+</div>
+</div>
+</body>
+</html>
