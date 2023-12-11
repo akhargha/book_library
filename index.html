@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar has-shadow is-fixed-top is-light">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <i class="fas fa-solid fa-book"></i>
+                <h1 class="header-text is-size-4 has-text-weight-bold" id="homepage">Library Manager</h1>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item" id="view-btn">View All</a>
+                <div class="navbar-item">
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Enter ISBN" id="isbn-search-bar">
+                        </div>
+                        <div class="control">
+                            <a class="button is-info" id="search-btn">Search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="container"> 
+    <h2 class="is-size-5 has-text-weight-bold">Add a Book</h2>
+
+    <div class="columns">
+        <div class="column">
+            <input class="input" id="title" type="text" placeholder="Title of the book" required>
+        </div>
+
+        <div class="column">
+            <input class="input" id="author" type="text" placeholder="Author of the book" required>
+        </div>
+
+        <div class="column">
+            <input class="input" id="isbn" type="text" placeholder="ISBN" required>
+        </div>
+
+        <div class="column">
+            <input class="input" type="date" id="publicationDate" required>
+        </div>
+
+        <div class="column">
+            <button class="button is-success" id="add">Add book to library</button>
+        </div>
+    </div>
+    
+    <h2 class="is-size-5 has-text-weight-bold">Delete a book</h2>
+    <div class="columns">
+        <div class="column">
+            <input class="input" type="number" id="isbn-delete" placeholder="ISBN" required>
+        </div>
+
+        <div class="column">
+            <button class="button is-danger" id="delete">Delete book from library</button>
+        </div>
+    </div>
+
+    <div id="books"></div>
+</div>
+</body>
+</html>

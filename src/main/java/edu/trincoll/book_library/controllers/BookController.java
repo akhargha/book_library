@@ -9,8 +9,10 @@ import java.net.URI;
 
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:63342") // Allow your frontend's origin
 public class BookController {
     private final BookRepository repository;
 
@@ -30,9 +32,25 @@ public class BookController {
     }
 
     @DeleteMapping("/books/{id}")
-    public ResponseEntity<Book> deleteBookByID(@PathVariable Long id){
+    public ResponseEntity<Book> deleteBookByID(@PathVariable Long id) {
         repository.deleteById(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/books/isbn/{isbn}")
+    public ResponseEntity<Book> getBookByIsbn(@PathVariable String isbn) {
+        Optional<Book> book = repository.findByIsbn(isbn);
+        return book.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/books/isbn/{isbn}")
+    public ResponseEntity<?> deleteBookByIsbn(@PathVariable String isbn) {
+        return repository.findByIsbn(isbn)
+                .map(book -> {
+                    repository.delete(book);
+                    return ResponseEntity.ok().build();
+                })
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping("/books")
