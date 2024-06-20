@@ -39,6 +39,7 @@ Here is a preview of what it looks like-
 
 Future enhancements **optional**:
 
+
 * [] Advanced search functionality: Ability to search by various attributes including Name, Author, Date, and more.
 * [] Dynamic filtering options: mplementation of sorting and filtering constraints. Users will be able to sort results and apply filters such as book name, publication date range, etc., making it easier to find specific titles.
 
